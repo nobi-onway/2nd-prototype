@@ -184,7 +184,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100046, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 63752581}
+      addedObject: {fileID: 63752579}
   m_SourcePrefab: {fileID: 100100000, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
 --- !u!1 &61096846
 GameObject:
@@ -196,6 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 61096847}
   - component: {fileID: 61096848}
+  - component: {fileID: 61096849}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -234,12 +235,27 @@ MonoBehaviour:
   - {fileID: 6912209327513822169, guid: a711299532c899940be6866e13aaf87d, type: 3}
   - {fileID: 8536389909935827998, guid: 1f8136bd755f16e4683e935974eea9eb, type: 3}
   - {fileID: 5525690035815891018, guid: bcf0ba8507008ab49813313091f403c3, type: 3}
+--- !u!114 &61096849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61096846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c0e1f24e2ce4a5b9bf1f3a7499cd45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObjects: []
+  objectToPool: {fileID: 5022121076544128061, guid: 61e64c6283e00104db7b6fe00e96e49a, type: 3}
+  amountToPool: 10
 --- !u!1 &63752578 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100046, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
   m_PrefabInstance: {fileID: 50102775}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &63752581
+--- !u!114 &63752579
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -248,10 +264,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 63752578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14a8ff5f6fcbbca47ad5cadee6ed519e, type: 3}
+  m_Script: {fileID: 11500000, guid: 38e917c52987daa41af6a0305d9813c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bullet: {fileID: 5022121076544128061, guid: 61e64c6283e00104db7b6fe00e96e49a, type: 3}
+  projectilePrefab: {fileID: 5022121076544128061, guid: 61e64c6283e00104db7b6fe00e96e49a, type: 3}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
